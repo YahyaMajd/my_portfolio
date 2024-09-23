@@ -1,0 +1,39 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    width: 100%;
+    background-color:transparent; /* Dark background color */
+    display: flex;
+    justify-content: center; /* Center the links */
+    padding: 15px 0;
+    position: fixed;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 0;
+    z-index: 1000; /* Ensure the navbar is above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .navbar-links {
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Space between links */
+  }
+  
+  .navbar-link {
+    color: #e4d5d5; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1em; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding around the links */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .navbar-link:hover {
+    color: #0074D9; /* Light blue color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+  }
+  
