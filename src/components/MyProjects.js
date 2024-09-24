@@ -13,7 +13,7 @@ const MyProjects = () => {
       title: 'Text Messaging Web-Application',
       description: 'A messaging app with real-time chat features.',
       imageUrl: TextImage,
-      githubLink: 'https://github.com/YahyaMajd/text-messaging-app',
+      githubLink: 'https://github.com/YahyaMajd/Text-Messaging-Application',
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ const MyProjects = () => {
       <li> Includes a PHP web interface, enabling users to edit the database as they please.</li> 
       </ul>,
       imageUrl: DBMSImage,
-      githubLink: '',
+      githubLink: 'https://github.com/YahyaMajd/Video-Game-Library-DBMS',
     },
   ];
 
@@ -48,7 +48,7 @@ const MyProjects = () => {
       <li>Makes tracking, following up on, and organizing job applications easy.</li> 
       </ul>,
       imageUrl: SwiftUI,
-      githubLink: '',
+      githubLink: 'https://github.com/YahyaMajd/IOSapp',
     },
   ];
 
