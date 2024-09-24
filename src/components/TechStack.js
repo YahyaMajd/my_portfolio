@@ -14,6 +14,7 @@ import Python from '../images/pytrhon.jpg';
 import REST from '../images/REST.jpg';
 import SQL from '../images/SQL.jpg';
 import Spring from '../images/Springboot.jpg';
+import AWS from '../images/AWS.jpg';
 const TechStack = () => {
   const techStack = [
     { name: 'React', logo: ReactLogo },
@@ -27,6 +28,7 @@ const TechStack = () => {
     {name : 'REST', logo : REST},
     {name : 'SQL', logo : SQL},
     {name : 'Spring', logo : Spring},
+    {name : 'AWS', logo : AWS},
     // Add more tech stack items if needed
   ];
 
