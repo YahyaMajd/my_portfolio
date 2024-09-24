@@ -13,6 +13,7 @@ function App() {
       <header className="app-header">
         <h1>Yahya Abouelmagd</h1>
         <h2>Computer Engineering Student</h2>
+        <h3> Vancouver, BC</h3>
         <a href="#about" className="cta-button">Learn About Me</a>
       </header>
       <main>
