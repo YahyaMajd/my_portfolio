@@ -15,10 +15,10 @@ const Navbar = () => {
         <li>
           <a href="#work-experience" className="navbar-link">Work Experience</a>
         </li>
-        <li>
+        {/* <li>
         <a href="/my_portfolio/Resume_REFACTOR.pdf" target="_blank" rel="noopener noreferrer" className="navbar-link">My Resume</a>
 
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
