@@ -10,7 +10,10 @@ import FirebaseLogo from '../images/FIREBASE.jpg';
 import GitLogo from '../images/GIT.jpg';
 import JavaLogo from '../images/java.jpg';
 import NodeExpressLogo from '../images/NodeExpress.jpg';
-
+import Python from '../images/pytrhon.jpg';
+import REST from '../images/REST.jpg';
+import SQL from '../images/SQL.jpg';
+import Spring from '../images/Springboot.jpg';
 const TechStack = () => {
   const techStack = [
     { name: 'React', logo: ReactLogo },
@@ -20,6 +23,10 @@ const TechStack = () => {
     { name: 'Git', logo: GitLogo },
     { name: 'Java', logo: JavaLogo },
     { name: 'Node & Express', logo: NodeExpressLogo },
+    {name : 'Python', logo : Python},
+    {name : 'REST', logo : REST},
+    {name : 'SQL', logo : SQL},
+    {name : 'Spring', logo : Spring},
     // Add more tech stack items if needed
   ];
 
