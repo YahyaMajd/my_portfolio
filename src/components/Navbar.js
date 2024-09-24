@@ -16,7 +16,7 @@ const Navbar = () => {
           <a href="#work-experience" className="navbar-link">Work Experience</a>
         </li>
         <li>
-          <a href="/Resume_REFACTOR.pdf" target="_blank" rel="noopener noreferrer" className="navbar-link">My Resume</a>
+          <a href={`${process.env.PUBLIC_URL}/Resume_REFACTOR.pdf`} target="_blank" rel="noopener noreferrer" className="navbar-link">My Resume</a>
         </li>
       </ul>
     </nav>

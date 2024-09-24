@@ -1,50 +1,42 @@
 /* src/App.css */
 
-
 html {
   scroll-behavior: smooth;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
-body  {
-    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
-  background-size:cover;
-        -webkit-animation: slidein 100s;
-        animation: slidein 100s;
-
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-
-        -webkit-animation-direction: alternate;
-        animation-direction: alternate;              
+body {
+  background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 @-webkit-keyframes slidein {
-from {background-position: top; background-size:3000px; }
-to {background-position: -100px 0px;background-size:2750px;}
+  from {background-position: top; background-size: 3000px; }
+  to {background-position: -100px 0px;background-size: 2750px;}
 }
 
 @keyframes slidein {
-from {background-position: top;background-size:3000px; }
-to {background-position: -100px 0px;background-size:2750px;}
-
+  from {background-position: top;background-size: 3000px; }
+  to {background-position: -100px 0px;background-size: 2750px;}
 }
 
-
-
-.App
-{
+.App {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Adjust space for footer */
-  min-height: 100vh; /* Ensure full screen height */
+  justify-content: space-between;
+  min-height: 100vh;
   background-size: 300% 300%;
   position: absolute;
   margin: auto;
@@ -52,34 +44,53 @@ to {background-position: -100px 0px;background-size:2750px;}
   right: 0;
   bottom: 0;
   left: 0;
-  
   border-radius: 3px;
 }
-.center h1{
-  text-align:center;
-  color:white;
-  font-family: 'Source Code Pro', monospace;
-  text-transform:uppercase;
-}
+
 .app-header {
-  text-align: center;
-  font-style: italic;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
   padding: 100px 20px 50px;
+  text-align: left;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Space between name and tech stack */
+  align-items: center; /* Vertically align items */
+  max-width: 1200px; /* Set max-width for content */
+  width: 100%;
+}
+
+.header-info {
+  text-align: left;
+  flex: 1; /* Take up more space */
+}
+
+.header-techstack {
+  text-align: right;
+  flex: 1; /* Take up less space */
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
 }
 
 .app-header h1 {
   font-size: 3.5em;
   font-weight: bold;
   margin-bottom: 10px;
+  color: white;
 }
 
 .app-header h2 {
   font-size: 1.5em;
-  color: #161313;
+  color: white;
 }
 
-
+.app-header h3 {
+  font-size: 1.5em;
+  color: white;
+}
 .cta-button {
   background-color: #55a4e9; /* Blue button */
   color: #ffffff;
@@ -97,13 +108,11 @@ to {background-position: -100px 0px;background-size:2750px;}
 }
 
 
-/* src/App.css */
+
 footer {
   width: 100%;
   padding: 10px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0); /* Match header style */
   position: relative; /* Relative position for alignment */
   bottom: 0; /* Align at the bottom */
 }
-

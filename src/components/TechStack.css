@@ -1,0 +1,53 @@
+/* src/components/TechStack.css */
+
+.tech-stack-section {
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 20px; /* Adjusted padding for smaller size */
+    width: 500px; /* Smaller width */
+    margin: 20px; /* Margin to create spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+  
+  .tech-stack-title {
+    font-size: 1.5em; /* Smaller title */
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Smaller gap */
+  }
+  
+  .tech-card {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80px; /* Smaller card width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .tech-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .tech-logo {
+    width: 20px; /* Smaller logo size */
+    height: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .tech-name {
+    color: #ffffff;
+    justify-content: center;
+    font-size: 0.9em; /* Smaller font size */
+    margin-top: 0;
+  }
+  
