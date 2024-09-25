@@ -9,6 +9,15 @@ import TechStack from './TechStack';
 import Typewriter from './Typewriter'; // Import the Typewriter component
 
 function App() {
+  const onButtonClick = () => {
+    const pdfUrl = "RESUME_REFACTOR.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Yahya-Abouelmagd_Resume.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="App">
      <div class="star"></div>
@@ -17,6 +26,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <div className="header-info">
+
             {/* Use the Typewriter component */}
             <h1>
               Yahya Abouelmagd
@@ -30,6 +40,8 @@ function App() {
               />
             </h2>
             <a href = "mailto:yaya.almajd@gmail.com" className = "cta-button">  Contact Me </a>
+            {/* <a href={`${process.env.PUBLIC_URL}/RESUMEREFACTOR.pdf`} download="Yahya_Resume.pdf" className='cta-button'> Download My Resume </a> */}
+            <button onClick={onButtonClick } className = "cta-button"> Download My Resume </button>
           </div>
           <div className="header-techstack"> {/* Container for tech stack */}
             <TechStack />
