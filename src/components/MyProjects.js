@@ -37,6 +37,17 @@ const MyProjects = () => {
       imageUrl: DBMSImage,
       githubLink: 'https://github.com/YahyaMajd/Video-Game-Library-DBMS',
     },
+    {
+      id: 5,
+      title: 'Load Balancing Proxy Service',
+      description: <ul>
+      <li> A simple proxying server that can be integrated seamlessy. Note: working on improving this project</li>
+      <li>Load Balancing Algorithms: round-robin, least connections, and IP-hash based routing.</li>
+      <li>Health Checks: Periodically check the health of the placeholding ExpressJs backend servers I created.</li> 
+      </ul>,
+      imageUrl: ProxyImage,
+      githubLink: 'https://github.com/YahyaMajd/NodeJs-Load-Balancer',
+    },
   ];
 
   // Example projects in progress array
@@ -51,17 +62,7 @@ const MyProjects = () => {
       imageUrl: SwiftUI,
       githubLink: 'https://github.com/YahyaMajd/IOSapp',
     },
-    {
-      id: 5,
-      title: 'Load Balancing Proxy Service',
-      description:  <ul>
-      <li>Load Balancing Algorithms: round-robin, least connections, and IP-hash based routing.</li>
-      <li>Failover: Automatically reroute traffic to standby servers when primary servers fail.</li>
-      <li>Health Checks: Periodically check the health of the placeholding ExpressJs backend servers I created.</li> 
-      </ul>,
-      imageUrl: ProxyImage,
-      githubLink: 'https://github.com/YahyaMajd/NodeJs-Load-Balancer',
-    },
+    
   ];
 
   return (
