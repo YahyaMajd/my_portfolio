@@ -22,9 +22,9 @@ const Navbar = () => {
         <li> 
           <a href = "https://www.linkedin.com/in/yahya-abouelmagd/" className = "navbar-link"> My LinkedIn </a>
         </li>
-        <li> 
+        {/* <li> 
           <a href = "mailto:yaya.almajd@gmail.com" className = "navbar-link">  Contact </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

@@ -6,18 +6,30 @@ import AboutMe from './AboutMe';
 import MyProjects from './MyProjects';
 import MyWorkExperience from './MyWorkExperience';
 import TechStack from './TechStack';
+import Typewriter from './Typewriter'; // Import the Typewriter component
 
 function App() {
   return (
     <div className="App">
+     <div class="star"></div>
+     <div class="star"></div>
       <Navbar />
       <header className="app-header">
         <div className="header-content">
           <div className="header-info">
-            <h1>Yahya Abouelmagd</h1>
-            <h2>Computer Engineering Student</h2>
-            <h3>Vancouver, BC</h3>
-            <a href="#about" className="cta-button">Learn About Me</a>
+            {/* Use the Typewriter component */}
+            <h1>
+              Yahya Abouelmagd
+            </h1>
+            <h2>
+              <Typewriter 
+                texts={['Computer Engineering Student. Vancouver, BC']} 
+                typingSpeed={100} 
+                erasingSpeed={50} 
+                delay={2000}
+              />
+            </h2>
+            <a href = "mailto:yaya.almajd@gmail.com" className = "cta-button">  Contact Me </a>
           </div>
           <div className="header-techstack"> {/* Container for tech stack */}
             <TechStack />
@@ -26,14 +38,17 @@ function App() {
       </header>
       <main>
         <AboutMe />
-       
         <MyWorkExperience />
+        <div class="star"></div>
+        <div class="star"></div>
         <div style={{ height: '90px' }}></div>
         <MyProjects />
       </main>
       <footer>
+        
         <p style={{ color: 'white' }}>© 2024 Yahya Abouelmagd. All Rights Reserved.</p>
       </footer>
+      
     </div>
   );
 }
