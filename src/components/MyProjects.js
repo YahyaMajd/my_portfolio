@@ -5,6 +5,7 @@ import TCPImage from '../images/TCP1.png'
 import TextImage from '../images/texts.jpg'
 import DBMSImage from '../images/DBMS.jpg'
 import SwiftUI from '../images/SwiftUI.jpg'
+import ProxyImage from '../images/Proxy.jpg'
 const MyProjects = () => {
   // Example completed projects array
   const completedProjects = [
@@ -49,6 +50,17 @@ const MyProjects = () => {
       </ul>,
       imageUrl: SwiftUI,
       githubLink: 'https://github.com/YahyaMajd/IOSapp',
+    },
+    {
+      id: 5,
+      title: 'Load Balancing Proxy Service',
+      description:  <ul>
+      <li>Load Balancing Algorithms: round-robin, least connections, and IP-hash based routing.</li>
+      <li>Failover: Automatically reroute traffic to standby servers when primary servers fail.</li>
+      <li>Health Checks: Periodically check the health of the placeholding ExpressJs backend servers I created.</li> 
+      </ul>,
+      imageUrl: ProxyImage,
+      githubLink: 'https://github.com/YahyaMajd/NodeJs-Load-Balancer',
     },
   ];
 
