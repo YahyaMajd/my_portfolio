@@ -19,6 +19,12 @@ const Navbar = () => {
         <a href="/my_portfolio/Resume_REFACTOR.pdf" target="_blank" rel="noopener noreferrer" className="navbar-link">My Resume</a>
 
         </li> */}
+        <li> 
+          <a href = "https://www.linkedin.com/in/yahya-abouelmagd/" className = "navbar-link"> My LinkedIn </a>
+        </li>
+        <li> 
+          <a href = "mailto:yaya.almajd@gmail.com" className = "navbar-link">  Contact </a>
+        </li>
       </ul>
     </nav>
   );

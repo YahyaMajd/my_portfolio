@@ -54,7 +54,7 @@ const MyProjects = () => {
 
   return (
     <section id="projects" className="projects-section">
-      <h2>Completed Projects</h2>
+      <h1>Completed Projects</h1>
       <p>Here are some of the projects I have worked on recently. More information on other projects on my resume!</p>
       <div className="projects-container">
         {completedProjects.map((project) => (
