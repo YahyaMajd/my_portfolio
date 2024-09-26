@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
@@ -9,6 +10,8 @@ html {
 body {
   background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
   background-size: cover;
+  height : 100%;
+  background-position: center;
   -webkit-animation: slidein 100s;
   animation: slidein 100s;
   -webkit-animation-fill-mode: forwards;
@@ -27,7 +30,7 @@ body {
 @keyframes slidein {
   from {background-position: top;background-size: 3000px; }
   to {background-position: -100px 0px;background-size: 2750px;}
-}
+} */
 
 
 
@@ -53,7 +56,7 @@ body {
 .app-header {
   width: 100%;
   display: flex;
-  justify-content: center; /* Center content horizontally */
+  justify-content: center;  
   padding: 100px 20px 50px;
   text-align: left;
 }
@@ -119,6 +122,9 @@ footer {
   position: relative; /* Relative position for alignment */
   bottom: 0; /* Align at the bottom */
 }
+
+
+
 
  
 /* Here we are making roundabout balls  */
@@ -346,5 +352,60 @@ for shooting effect */
   100% {
       -webkit-transform: translateX(270px);
       transform: translateX(270px);
+  }
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+  /* Adjust .App for mobile */
+  .App {
+    width: 100%;
+    height: auto; /* Allow height to expand with content */
+    padding: 10px; /* Add padding for mobile */
+    margin: 0; /* Remove unnecessary margins */
+    position: relative; /* Change position */
+  }
+
+  /* Adjust .app-header for mobile */
+  .app-header {
+    padding: 40px 10px; /* Reduce padding */
+    text-align: center; /* Center align header content */
+  }
+
+  /* Adjust .header-content for mobile */
+  .header-content {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  /* Adjust header text for mobile */
+  .app-header h1 {
+    font-size: 2em; /* Smaller font size */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+
+  .app-header h2, .app-header h3 {
+    font-size: 1.2em; /* Smaller font size */
+  }
+
+  /* Adjust buttons */
+  .cta-button {
+    width: 90%; /* Full width with padding */
+    padding: 10px 20px; /* Smaller padding */
+    font-size: 1em; /* Adjust font size */
+    margin-bottom: 15px; /* Space between buttons */
+  }
+
+  /* Adjust footer */
+  footer {
+    padding: 20px 10px; /* Adjust padding for mobile */
+    font-size: 0.8em; /* Smaller font size */
+  }
+
+  /* Adjust the .star elements */
+  .star {
+    display: none; /* Hide stars on mobile to reduce clutter */
   }
 }

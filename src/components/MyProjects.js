@@ -41,9 +41,10 @@ const MyProjects = () => {
       id: 5,
       title: 'Load Balancing Proxy Service',
       description: <ul>
-      <li> A simple proxying server that can be integrated seamlessy. Note: working on improving this project</li>
-      <li>Load Balancing Algorithms: round-robin, least connections, and IP-hash based routing.</li>
+      <li> A simple proxying server that can be integrated seamlessy. Note: </li>
+      <li>Load Balancing Algorithms: round-robin, least connections.</li>
       <li>Health Checks: Periodically check the health of the placeholding ExpressJs backend servers I created.</li> 
+      <li>Includes rate limiting.</li>
       </ul>,
       imageUrl: ProxyImage,
       githubLink: 'https://github.com/YahyaMajd/NodeJs-Load-Balancer',

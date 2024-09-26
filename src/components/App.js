@@ -40,7 +40,6 @@ function App() {
               />
             </h2>
             <a href = "mailto:yaya.almajd@gmail.com" className = "cta-button">  Contact Me </a>
-            {/* <a href={`${process.env.PUBLIC_URL}/RESUMEREFACTOR.pdf`} download="Yahya_Resume.pdf" className='cta-button'> Download My Resume </a> */}
             <button onClick={onButtonClick } className = "cta-button"> Download My Resume </button>
           </div>
           <div className="header-techstack"> {/* Container for tech stack */}
@@ -53,7 +52,6 @@ function App() {
         <MyWorkExperience />
         <div class="star"></div>
         <div class="star"></div>
-        <div style={{ height: '90px' }}></div>
         <MyProjects />
       </main>
       <footer>
