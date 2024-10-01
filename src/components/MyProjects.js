@@ -61,7 +61,7 @@ const MyProjects = () => {
       <li>Makes tracking, following up on, and organizing job applications easy.</li> 
       </ul>,
       imageUrl: SwiftUI,
-      githubLink: 'https://github.com/YahyaMajd/IOSapp',
+      githubLink: 'https://github.com/YahyaMajd/JobSimple',
     },
     
   ];
