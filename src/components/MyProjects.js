@@ -6,6 +6,7 @@ import TextImage from '../images/texts.jpg'
 import DBMSImage from '../images/DBMS.jpg'
 import SwiftUI from '../images/SwiftUI.jpg'
 import ProxyImage from '../images/Proxy.jpg'
+import GolangIamge from '../images/Golang.png'
 const MyProjects = () => {
   // Example completed projects array
   const completedProjects = [
@@ -62,6 +63,16 @@ const MyProjects = () => {
       </ul>,
       imageUrl: SwiftUI,
       githubLink: 'https://github.com/YahyaMajd/JobSimple',
+    },
+    {
+      id: 6,
+      title: 'Golang File Synchronizer ',
+      description:  <ul>
+      <li>Terminal based Go program monitoring changes in directories and synchronizing them. </li>
+      <li> A good exercise to learn Golang's syntax, file I/O, and concurrency</li> 
+      </ul>,
+      imageUrl: GolangIamge,
+      githubLink: 'https://github.com/YahyaMajd/Golang-FileSynchronizer.git',
     },
     
   ];
