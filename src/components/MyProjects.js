@@ -7,6 +7,7 @@ import DBMSImage from '../images/DBMS.jpg'
 import SwiftUI from '../images/SwiftUI.jpg'
 import ProxyImage from '../images/Proxy.jpg'
 import GolangIamge from '../images/Golang.png'
+import JavaImage from '../images/JavaNotification.jpg'
 const MyProjects = () => {
   // Example completed projects array
   const completedProjects = [
@@ -69,12 +70,21 @@ const MyProjects = () => {
       title: 'Golang File Synchronizer ',
       description:  <ul>
       <li>Terminal based Go program monitoring changes in directories and synchronizing them. </li>
-      <li> A good exercise to learn Golang's syntax, file I/O, and concurrency</li> 
+      <li> A good exercise to learn Golang's syntax, file I/O, and concurrency.</li> 
       </ul>,
       imageUrl: GolangIamge,
       githubLink: 'https://github.com/YahyaMajd/Golang-FileSynchronizer.git',
     },
-    
+    {
+      id: 7,
+      title: ' Java-based Hybrid Notification Service ',
+      description:  <ul>
+      <li>This hybrid service gives the user the option to choose between email and push notifications, or even receive both for different types of notifications. </li>
+      <li> Allows users to configure their preferred notification channel (email, push, or both).</li> 
+      </ul>,
+      imageUrl: JavaImage,
+      githubLink: 'https://github.com/YahyaMajd/Hybrid-Notification-Service.git',
+    },
   ];
 
   return (
