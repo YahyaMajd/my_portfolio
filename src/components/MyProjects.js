@@ -79,9 +79,9 @@ const MyProjects = () => {
       id: 7,
       title: ' Java-based Hybrid Notification Service ',
       description:  <ul>
-      <li>This hybrid service gives the user the option to choose between email and push notifications, or even receive both for different types of notifications. </li>
+      <li> User sets reminders in Android app and push notifications, or even different types of notifications are used to alert the user of the reminder. </li>
       <li> Goal : allows users to configure their preferred notification channel (email, push, or both).</li> 
-      <li> An android app is built to receive notifications by using firebase as a middleman.</li> 
+      <li> An android app is built for users to set reminders and receive notifications by using firebase as a middleman.</li> 
       <li> Github for android app will be added soon.</li> 
       </ul>,
       imageUrl: JavaImage,
