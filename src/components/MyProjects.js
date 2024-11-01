@@ -8,13 +8,18 @@ import SwiftUI from '../images/SwiftUI.jpg'
 import ProxyImage from '../images/Proxy.jpg'
 import GolangIamge from '../images/Golang.png'
 import JavaImage from '../images/JavaNotification.jpg'
+import RESTAPI from '../images/RESTAPI.jpg'
 const MyProjects = () => {
   // Example completed projects array
   const completedProjects = [
     {
       id: 1,
       title: 'Text Messaging Web-Application',
-      description: 'A messaging app with real-time chat features.',
+      description:<ul>
+        <li> A messaging app with real-time chat features</li>
+        <li> Click to access Github!</li>
+      </ul> 
+      ,
       imageUrl: TextImage,
       githubLink: 'https://github.com/YahyaMajd/Text-Messaging-Application',
     },
@@ -25,6 +30,7 @@ const MyProjects = () => {
                 <li>Designed and Implemented a TCP Protocol.</li>
                 <li> Sender sends a text file and receiver prints in output file.</li>
                 <li> Includes packet retransmission and congestion control.</li> 
+                <li> Click to access Github!</li>
                 </ul>,
       imageUrl: TCPImage,
       githubLink: 'https://github.com/YahyaMajd/yayaammar-pa1',
@@ -35,6 +41,7 @@ const MyProjects = () => {
       description: <ul>
       <li>Designed a relational database to describe a video game library </li>
       <li> Includes a PHP web interface, enabling users to edit the database as they please.</li> 
+      <li> Click to access Github!</li>
       </ul>,
       imageUrl: DBMSImage,
       githubLink: 'https://github.com/YahyaMajd/Video-Game-Library-DBMS',
@@ -47,9 +54,22 @@ const MyProjects = () => {
       <li>Load Balancing Algorithms: round-robin, least connections.</li>
       <li>Health Checks: Periodically check the health of the placeholding ExpressJs backend servers I created.</li> 
       <li>Includes rate limiting.</li>
+      <li> Click to access Github!</li>
       </ul>,
       imageUrl: ProxyImage,
       githubLink: 'https://github.com/YahyaMajd/NodeJs-Load-Balancer',
+    },
+    {
+      id: 8,
+      title: ' Java-based RESAPI ',
+      
+      description: <ul>
+      <li> A simple REST API built with Spring Boot for managing employee data, supporting CRUD operations. </li>
+      <li> Uses local H2 Database</li>
+      <li> Click to access Github!</li>
+      </ul>,
+      imageUrl: RESTAPI,
+      githubLink: 'https://github.com/YahyaMajd/Java-REST-API.git',
     },
   ];
 
@@ -61,6 +81,7 @@ const MyProjects = () => {
       description:  <ul>
       <li>SwiftUI app implemented on xcode </li>
       <li>Makes tracking, following up on, and organizing job applications easy.</li> 
+      <li> Click to access Github!</li>
       </ul>,
       imageUrl: SwiftUI,
       githubLink: 'https://github.com/YahyaMajd/JobSimple',
@@ -70,7 +91,8 @@ const MyProjects = () => {
       title: 'Golang File Synchronizer ',
       description:  <ul>
       <li>Terminal based Go program monitoring changes in directories and synchronizing them. </li>
-      <li> A good exercise to learn Golang's syntax, file I/O, and concurrency.</li> 
+      <li> A good exercise to learn Golang's syntax, file I/O, and concurrency.</li>
+      <li> Click to access Github!</li> 
       </ul>,
       imageUrl: GolangIamge,
       githubLink: 'https://github.com/YahyaMajd/Golang-FileSynchronizer.git',
@@ -82,6 +104,7 @@ const MyProjects = () => {
       <li> User sets reminders in Android app and push notifications, or even different types of notifications are used to alert the user of the reminder. </li>
       <li> Goal : allows users to configure their preferred notification channel (email, push, or both).</li> 
       <li> An android app is built for users to set reminders and receive notifications by using firebase as a middleman.</li> 
+      <li> Click to access Github!</li>
       <li> Github for android app will be added soon.</li> 
       </ul>,
       imageUrl: JavaImage,
