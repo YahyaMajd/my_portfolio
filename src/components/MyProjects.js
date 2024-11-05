@@ -61,7 +61,7 @@ const MyProjects = () => {
     },
     {
       id: 8,
-      title: ' Java-based RESAPI ',
+      title: ' Java-based RESTAPI ',
       
       description: <ul>
       <li> A simple REST API built with Spring Boot for managing employee data, supporting CRUD operations. </li>
