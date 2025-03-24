@@ -3,13 +3,14 @@ import React from 'react';
 import './MyWorkExperience.css';
 import DELLImage from '../images/Dell.jpg'
 import TFSImage from '../images/TFS.jpg'
+import BroadcomImage from '../images/Broadocom.jpeg'
 const WorkExperience = () => {
   const workExperience = [
     {
       id: 1,
       title: 'Software Engineer Intern',
       company: 'Terraforma Systems Inc.',
-      duration: 'September 2024 - Present',
+      duration: 'September 2024 - December 2024',
       description: (
         <ul>
         <li>Click here to view my documentation!</li>
@@ -28,6 +29,15 @@ const WorkExperience = () => {
       ),
       imageUrl: DELLImage,
       docLink: ''
+    }, {
+      id: 1,
+      title: 'Software Engineer Coop',
+      company: 'Broadcom ltd.',
+      duration: 'Janaury 2025 - Present',
+      description: (
+       ""
+      ),
+      imageUrl:BroadcomImage ,
     }
   ];
 
