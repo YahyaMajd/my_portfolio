@@ -1,6 +1,8 @@
 // src/components/TechStack.js
 import React from 'react';
 import './TechStack.css';
+import useInView from '../hooks/useInView';
+import '../reveal.css';
 
 // Import images
 import ReactLogo from '../images/react.jpg';
@@ -32,12 +34,22 @@ const TechStack = () => {
     // Add more tech stack items if needed
   ];
 
+  const [ref, inView] = useInView({ threshold: 0.18, once: false });
+
   return (
-    <section id="tech-stack" className="tech-stack-section">
+    <section
+      id="tech-stack"
+      ref={ref}
+      className={`tech-stack-section reveal ${inView ? 'visible' : ''}`}
+    >
       <h2 className="tech-stack-title">My Tech Stack</h2>
-      <div className="tech-stack-container">
+      <div className={`tech-stack-container reveal-stagger ${inView ? 'visible' : ''}`}>
         {techStack.map((tech, index) => (
-          <div key={index} className="tech-card">
+          <div
+            key={index}
+            className="tech-card"
+            style={{ ['--reveal-delay']: `${index * 140}ms` }}
+          >
             <img src={tech.logo} alt={`${tech.name} logo`} className="tech-logo" />
             <p className="tech-name">{tech.name}</p>
           </div>

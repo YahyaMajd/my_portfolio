@@ -1,6 +1,8 @@
 // src/components/WorkExperience.js
 import React from 'react';
 import './MyWorkExperience.css';
+import useInView from '../hooks/useInView';
+import '../reveal.css';
 import DELLImage from '../images/Dell.jpg'
 import TFSImage from '../images/TFS.jpg'
 import BroadcomImage from '../images/Broadcom.png'
@@ -43,27 +45,25 @@ const WorkExperience = () => {
       ),
       imageUrl: DELLImage,
       docLink: ''
-    }, {
-      id: 1,
-      title: 'Software Engineer Coop',
-      company: 'Broadcom ltd.',
-      duration: 'Janaury 2025 - Present',
-      description: (
-       ""
-      ),
-      imageUrl:BroadcomImage ,
     }
   ];
 
+  const [ref, inView] = useInView({ threshold: 0.18, once: false });
+
   return (
-    <section id="work-experience" className="work-experience-section">
+    <section
+      id="work-experience"
+      ref={ref}
+      className={`work-experience-section reveal ${inView ? 'visible' : ''}`}
+    >
       <h2>Work Experience</h2>
       <p>Here are some of the roles I have held during my career.</p>
-      <div className="work-experience-container">
-        {workExperience.map((experience) => (
+      <div className={`work-experience-container reveal-stagger ${inView ? 'visible' : ''}`}>
+        {workExperience.map((experience, idx) => (
           <div 
-            key={experience.id} 
+            key={experience.id || idx} 
             className="work-card"
+            style={{ ['--reveal-delay']: `${idx * 180}ms` }}
             onClick={() => experience.docLink && window.open(experience.docLink, "_blank")} // Opens Google Doc link in a new tab if available
           >
             <div className="work-image-wrapper">

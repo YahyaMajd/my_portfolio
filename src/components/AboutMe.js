@@ -1,10 +1,18 @@
 // src/components/AboutMe.js
 import React from 'react';
 import './AboutMe.css';
+import useInView from '../hooks/useInView';
+import '../reveal.css';
 
 const AboutMe = () => {
+  const [ref, inView] = useInView({ threshold: 0.2, once: false });
+
   return (
-    <section id="about" className="about-section">
+    <section
+      id="about"
+      ref={ref}
+      className={`about-section reveal ${inView ? 'visible' : ''}`}
+    >
       <h2 className="section-title">About Me</h2>
       <p className="about-text">
         I am Yahya Abouelmagd, a 4th year Computer Engineering student at the University of British Columbia, pausing my educational journey and embarking on my CO-OP one. 
