@@ -10,7 +10,8 @@ import Typewriter from './Typewriter'; // Import the Typewriter component
 
 function App() {
   const onButtonClick = () => {
-    const pdfUrl = "RESUME_REFACTOR.pdf";
+    // Use PUBLIC_URL so the file is resolved correctly in dev and production (including subpaths)
+    const pdfUrl = `${process.env.PUBLIC_URL || ''}/RESUME_REFACTOR.pdf`;
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Yahya-Abouelmagd_Resume.pdf"; // specify the filename
@@ -20,8 +21,6 @@ function App() {
   };
   return (
     <div className="App">
-     <div class="star"></div>
-     <div class="star"></div>
       <Navbar />
       <header className="app-header">
         <div className="header-content">
@@ -41,6 +40,16 @@ function App() {
             </h2>
             <a href = "mailto:yaya.almajd@gmail.com" className = "cta-button">  Contact Me </a>
             <button onClick={onButtonClick } className = "cta-button"> Download My Resume </button>
+            {/* Fallback: direct link that opens resume in a new tab */}
+            <a
+              href={`${process.env.PUBLIC_URL || ''}/RESUME_REFACTOR.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button"
+              style={{ marginLeft: 10 }}
+            >
+              Open Resume
+            </a>
           </div>
           <div className="header-techstack"> {/* Container for tech stack */}
             <TechStack />
@@ -50,8 +59,6 @@ function App() {
       <main>
         <AboutMe />
         <MyWorkExperience />
-        <div class="star"></div>
-        <div class="star"></div>
         <MyProjects />
       </main>
       <footer>

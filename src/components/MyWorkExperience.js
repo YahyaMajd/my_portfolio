@@ -3,14 +3,28 @@ import React from 'react';
 import './MyWorkExperience.css';
 import DELLImage from '../images/Dell.jpg'
 import TFSImage from '../images/TFS.jpg'
-import BroadcomImage from '../images/Broadocom.jpeg'
+import BroadcomImage from '../images/Broadcom.png'
 const WorkExperience = () => {
+  
   const workExperience = [
+     {
+      id: 0,
+      title: 'Software Engineer Co-op',
+      company: 'Broadcom Ltd.',
+      duration: 'January 2025 - August 2025',
+      description: (
+        <ul>
+        <li>Layer7 Gateway team</li>
+      </ul>
+      ),
+      imageUrl: BroadcomImage,
+      docLink: ''
+    },
     {
       id: 1,
-      title: 'Software Engineer Intern',
+      title: 'Computer Engineer Co-op',
       company: 'Terraforma Systems Inc.',
-      duration: 'September 2024 - December 2024',
+      duration: 'September 2024 - Decemeber 2024',
       description: (
         <ul>
         <li>Click here to view my documentation!</li>

@@ -8,49 +8,18 @@ html {
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
 body {
-  background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa');
-  background-size: cover;
-  height : 100%;
-  background-position: center;
-  -webkit-animation: slidein 100s;
-  animation: slidein 100s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
+  /* Simpler, subtle gradient background for readability and performance */
+  background: linear-gradient(180deg, #071021 0%, #172033 60%, #071021 100%);
 }
-
-@-webkit-keyframes slidein {
-  from {background-position: top; background-size: 3000px; }
-  to {background-position: -100px 0px;background-size: 2750px;}
-}
-
-@keyframes slidein {
-  from {background-position: top;background-size: 3000px; }
-  to {background-position: -100px 0px;background-size: 2750px;}
-} 
-
-
-
+/* Decorative animations removed to simplify UI and improve readability */
 .App {
-  position : relative;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   min-height: 100vh;
-  background-size: 300% 300%;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 3px;
+  position: relative; /* allow natural scrolling */
+  padding-top: 64px; /* leave space for fixed navbar */
 }
 
 .app-header {
@@ -98,19 +67,19 @@ body {
   color: white;
 }
 .cta-button {
-  background-color: #55a4e9; /* Blue button */
+  background-color: #2b6cb0; /* Softer blue button */
   color: #ffffff;
-  padding: 15px 30px;
+  padding: 10px 18px;
   text-decoration: none;
-  font-size: 1.1em;
-  border-radius: 30px;
+  font-size: 1em;
+  border-radius: 8px;
   display: inline-block;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add shadow transition */
+  transition: background-color 0.2s ease, transform 0.12s ease;
 }
 
 .cta-button:hover {
-  background-color: #005fa3;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+  background-color: #235a91;
+  transform: translateY(-2px);
 }
 
 
@@ -126,234 +95,7 @@ footer {
 
 
 
- 
-/* Here we are making roundabout balls  */
-.star {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 2px;
-  border-radius: 885px;
-  background: linear-gradient(-45deg,
-          #eef0f5, rgba(0, 0, 255, 0));
-
-  -webkit-filter: drop-shadow(0 0 6px #eef1f8);
-  filter: drop-shadow(0 0 6px #d7dff0);
-  -webkit-animation: tail 3000ms ease-in-out infinite,
-      shooting 3000ms ease-in-out infinite;
-  animation: tail 3000ms ease-in-out infinite,
-      shooting 3000ms ease-in-out infinite;
-}
-
-/* Here we add before and after effect to star */
-.star::before,
-.star::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 1px);
-  right: 0;
-  height: 2px;
-  background: linear-gradient(-45deg,
-          rgba(0, 0, 255, 0),
-          #eaeef8,
-          rgba(0, 0, 255, 0));
-  -webkit-transform: translateX(50%) rotateZ(45deg);
-  transform: translateX(50%) rotateZ(45deg);
-  border-radius: 100%;
-  -webkit-animation: shining 3000ms ease-in-out infinite;
-  animation: shining 3000ms ease-in-out infinite;
-}
-
-.star::after {
-  -webkit-transform: translateX(50%) rotateZ(-45deg);
-  transform: translateX(50%) rotateZ(-45deg);
-}
-
-/* Here we are adding location of each 
-   nth-child, animations, delays, and 
-   before and after effects to each 
-   and every balls(stars) */
-.star:nth-child(1) {
-  top: calc(50% - -119px);
-  left: calc(50% - 43px);
-  -webkit-animation-delay: 4000ms;
-  animation-delay: 4000ms;
-}
-
-.star:nth-child(1)::before,
-.star:nth-child(1)::after {
-  -webkit-animation-delay: 4000ms;
-  animation-delay: 4000ms;
-}
-
-.star:nth-child(2) {
-  top: calc(50% - -43px);
-  left: calc(50% - 37px);
-  -webkit-animation-delay: 5000ms;
-  animation-delay: 5000ms;
-}
-
-.star:nth-child(2)::before,
-.star:nth-child(2)::after {
-  -webkit-animation-delay: 5000ms;
-  animation-delay: 5000ms;
-}
-
-.star:nth-child(3) {
-  top: calc(50% - -40px);
-  left: calc(50% - 222px);
-  -webkit-animation-delay: 7000ms;
-  animation-delay: 7000ms;
-}
-
-.star:nth-child(3)::before,
-.star:nth-child(3)::after {
-  -webkit-animation-delay: 7000ms;
-  animation-delay: 7000ms;
-}
-
-.star:nth-child(4) {
-  top: calc(50% - -29px);
-  left: calc(50% - 113px);
-  -webkit-animation-delay: 7000ms;
-  animation-delay: 7000ms;
-}
-
-.star:nth-child(4)::before,
-.star:nth-child(4)::after {
-  -webkit-animation-delay: 7000ms;
-  animation-delay: 7000ms;
-}
-
-.star:nth-child(5) {
-  top: calc(50% - 146px);
-  left: calc(50% - 112px);
-  -webkit-animation-delay: 3000ms;
-  animation-delay: 3000ms;
-}
-
-.star:nth-child(5)::before,
-.star:nth-child(5)::after {
-  -webkit-animation-delay: 3000ms;
-  animation-delay: 3000ms;
-}
-
-.star:nth-child(6) {
-  top: calc(50% - -108px);
-  left: calc(50% - 160px);
-  -webkit-animation-delay: 3000ms;
-  animation-delay: 3000ms;
-}
-
-.star:nth-child(6)::before,
-.star:nth-child(6)::after {
-  -webkit-animation-delay: 3000ms;
-  animation-delay: 3000ms;
-}
-
-.star:nth-child(7) {
-  top: calc(50% - 52px);
-  left: calc(50% - 72px);
-  -webkit-animation-delay: 7000ms;
-  animation-delay: 7000ms;
-}
-
-.star:nth-child(7)::before,
-.star:nth-child(7)::after {
-  -webkit-animation-delay: 7000ms;
-  animation-delay: 7000ms;
-}
-
-/* This code will help to generate 
-effect in tail of star */
-@keyframes tail {
-  0% {
-      width: 0;
-  }
-
-  30% {
-      width: 100px;
-  }
-
-  100% {
-      width: 0;
-  }
-}
-
-/* This code will generate shining 
-effect in head of star */
-@keyframes shining {
-  0% {
-      width: 0;
-  }
-
-  50% {
-      width: 30px;
-  }
-
-  100% {
-      width: 0;
-  }
-}
-
-/* Here we are adding webkit-animation 
-to head of star for shining */
-@-webkit-keyframes shining {
-  0% {
-      width: 0;
-  }
-
-  50% {
-      width: 30px;
-  }
-
-  100% {
-      width: 0;
-  }
-}
-
-/* Here we are adding webkit-animation 
-to tail of star */
-@-webkit-keyframes tail {
-  0% {
-      width: 0;
-  }
-
-  30% {
-      width: 100px;
-  }
-
-  100% {
-      width: 0;
-  }
-}
-
-/* Here we are adding webkit-animation 
-for shooting effect */
-@-webkit-keyframes shooting {
-  0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-  }
-
-  100% {
-      -webkit-transform: translateX(270px);
-      transform: translateX(270px);
-  }
-}
-
-/* Here we make shooting effect */
-@keyframes shooting {
-  0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-  }
-
-  100% {
-      -webkit-transform: translateX(270px);
-      transform: translateX(270px);
-  }
-}
+/* Decorative animations removed to simplify UI and improve readability */
 
 
 /* Mobile Styles */
@@ -404,8 +146,5 @@ for shooting effect */
     font-size: 0.8em; /* Smaller font size */
   }
 
-  /* Adjust the .star elements */
-  .star {
-    display: none; /* Hide stars on mobile to reduce clutter */
-  }
+  /* Decorative elements removed */
 }

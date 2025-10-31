@@ -75,41 +75,42 @@ const MyProjects = () => {
 
   // Example projects in progress array
   const projectsInProgress = [
+
     {
       id: 4,
-      title: 'Job Application Tracker Mobile Application ',
+      title: 'Dormdash',
       description:  <ul>
-      <li>SwiftUI app implemented on xcode </li>
-      <li>Makes tracking, following up on, and organizing job applications easy.</li> 
+      <li> An Uber-like app that lets students schedule requests for movers to pick up, store, and return their belongings running
+on a Dockerized NodeJS server. </li>
       <li> Click to access Github!</li>
       </ul>,
       imageUrl: SwiftUI,
-      githubLink: 'https://github.com/YahyaMajd/JobSimple',
+      githubLink: 'https://github.com/Dormdash-CPEN321/DormDash',
     },
-    {
-      id: 6,
-      title: 'Golang File Synchronizer ',
-      description:  <ul>
-      <li>Terminal based Go program monitoring changes in directories and synchronizing them. </li>
-      <li> A good exercise to learn Golang's syntax, file I/O, and concurrency.</li>
-      <li> Click to access Github!</li> 
-      </ul>,
-      imageUrl: GolangIamge,
-      githubLink: 'https://github.com/YahyaMajd/Golang-FileSynchronizer.git',
-    },
-    {
-      id: 7,
-      title: ' Java-based Hybrid Notification Service ',
-      description:  <ul>
-      <li> User sets reminders in Android app and push notifications, or even different types of notifications are used to alert the user of the reminder. </li>
-      <li> Goal : allows users to configure their preferred notification channel (email, push, or both).</li> 
-      <li> An android app is built for users to set reminders and receive notifications by using firebase as a middleman.</li> 
-      <li> Click to access Github!</li>
-      <li> Github for android app will be added soon.</li> 
-      </ul>,
-      imageUrl: JavaImage,
-      githubLink: 'https://github.com/YahyaMajd/Hybrid-Notification-Service.git',
-    },
+    // {
+    //   id: 6,
+    //   title: 'Golang File Synchronizer ',
+    //   description:  <ul>
+    //   <li>Terminal based Go program monitoring changes in directories and synchronizing them. </li>
+    //   <li> A good exercise to learn Golang's syntax, file I/O, and concurrency.</li>
+    //   <li> Click to access Github!</li> 
+    //   </ul>,
+    //   imageUrl: GolangIamge,
+    //   githubLink: 'https://github.com/YahyaMajd/Golang-FileSynchronizer.git',
+    // },
+    // {
+    //   id: 7,
+    //   title: ' Java-based Hybrid Notification Service ',
+    //   description:  <ul>
+    //   <li> User sets reminders in Android app and push notifications, or even different types of notifications are used to alert the user of the reminder. </li>
+    //   <li> Goal : allows users to configure their preferred notification channel (email, push, or both).</li> 
+    //   <li> An android app is built for users to set reminders and receive notifications by using firebase as a middleman.</li> 
+    //   <li> Click to access Github!</li>
+    //   <li> Github for android app will be added soon.</li> 
+    //   </ul>,
+    //   imageUrl: JavaImage,
+    //   githubLink: 'https://github.com/YahyaMajd/Hybrid-Notification-Service.git',
+    // },
   ];
 
   return (

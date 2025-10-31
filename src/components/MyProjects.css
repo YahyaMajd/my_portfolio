@@ -17,38 +17,40 @@
   }
   .projects-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px; /* Spacing between project cards */
+    flex-direction: column; /* Stack vertically for simpler scrolling */
+    align-items: center;
+    gap: 20px; /* Spacing between project cards */
     margin-top: 20px;
+    width: 100%;
   }
   
   /* Individual project card */
   .project-card {
-    background-color:rgba(0, 0, 0, 0.5); /* Slightly transparent dark background */
-    border-radius: 15px;
-    width: 300px; /* Card width */
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    background-color: rgba(0, 0, 0, 0.45); /* Slightly transparent dark background */
+    border-radius: 12px;
+    width: 90%; /* responsive width */
+    max-width: 900px;
+    padding: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.15s ease, box-shadow 0.15s ease; /* Smooth transition for hover effects */
     cursor: pointer; /* Cursor pointer for clickable effect */
     overflow: hidden;
     position: relative;
-    font-style: italic;
+    font-style: normal;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   /* Hover effect */
   .project-card:hover {
-    transform: scale(1.20); /* Slightly enlarges the card */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow for depth */
+    transform: translateY(-6px); /* gentle lift on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   }
   
   /* Project image wrapper */
   .project-image-wrapper {
     border-radius: 10px; /* Rounded edges for image */
     overflow: hidden;
-    height: 180px; /* Height for image container */
+    height: 220px; /* Slightly taller image for card layout */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,8 +66,7 @@
   
   /* Image zoom effect on hover */
   .project-card:hover .project-image {
-    transform: scale(1.20); /* Slightly enlarges the card */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow for depth */
+    transform: scale(1.05); /* small image zoom */
   }
  
   /* Project information */

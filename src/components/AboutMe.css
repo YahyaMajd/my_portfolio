@@ -29,9 +29,9 @@
 }
 
 .about-text:hover {
-  transform: scale(1.50);
+  transform: none; /* no aggressive scaling */
 }
 
 .about-section:hover{
-  transform: scale(1.20);
+  transform: none;
 }
